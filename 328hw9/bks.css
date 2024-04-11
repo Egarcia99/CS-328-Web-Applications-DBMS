@@ -1,0 +1,57 @@
+ /* Emilyo Garcia
+   Homework 4 Problem 8
+   last modified date 
+   03/02/2023   */
+
+
+body {
+    background-color: darkgoldenrod;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+img {
+    margin-right: 0%;
+    margin-left: 75%;
+    width: 8em;
+    height: 8em;
+    animation-name: img;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+}
+
+@keyframes img {
+    0% {
+        margin-top: 0%;
+        margin-left: 75%;
+    }
+    50% {
+        margin-top: 10%;
+        margin-left: -100%;
+    }
+    100% {
+        margin-top: 0%;
+        margin-left: 75%;
+    }
+}
+
+
+fieldset {
+    padding: .25cm;
+    column-gap: .2cm;
+    border: solid 2.5px darkcyan;
+    border-radius: 15px;
+    background-color: aquamarine;
+    margin-top: .85cm;
+    margin-bottom: .45cm;
+
+}
+
+header, h3 {
+    color: aqua;
+}
+
+h3 {
+    font-size: 2.5em;
+}

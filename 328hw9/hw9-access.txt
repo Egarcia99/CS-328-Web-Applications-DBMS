@@ -1,0 +1,29 @@
+Emilyo Garcia 
+CS 328 
+Homework 9 Problem 1
+
+        "Designing for accessibility is not that hard"
+
+1) One thing I would like to remember from the website is that using labels or instructions
+    for form fields and inputs will guide users to a smooth process while using your website.
+
+2) Another thing I would like to keep in the back of my mind is the key importance of keyboard 
+    accessibility. As many people navigating rely on screen readers, they will be dependent on a 
+    keyboard to navigate through content within your website.
+
+3) The last thing I would like to remember is something I tend to forget. Remembering to write useful 
+    alternative content for your images and other non-text content is as important as the image that is 
+    inserted into the website.
+
+
+        "Teach Access Initiative's short tutorial"
+
+1) Having a checklist for improving my visual designs in a website seems like something that can 
+    really help me improve how my design for my website looks and adjusting everything to optimze 
+    the visual aspect is key to any website
+
+2) Text Size in a website is also a very crucial aspect in order for your website to look as professional
+    and apporiate for everyone that uses it
+
+3) Color contrast is key for any text to appear clear within the webpage and will standout as wanted since
+  there can be a lot of text and important information can hide if not apportatley contrasted in the website.

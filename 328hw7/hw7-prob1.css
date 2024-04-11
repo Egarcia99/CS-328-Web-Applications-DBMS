@@ -1,0 +1,82 @@
+/* Edited by: Emilyo Garcia
+   HW 7 Problem 1
+   LMD: 04/07/23 
+   
+    created for try-oracle.php
+    by: Sharon Tuttle
+    last modified: 2023-03-08 */
+
+    body
+{
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+/*--
+    center the form's fieldset, and add a little space
+    on the inner bottom
+--*/
+    
+fieldset
+{
+    width: 21em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: .3em;
+}
+
+/*-- so the fieldset's legend text fits on one line...! --*/
+
+legend
+{
+    font-size: 90%;
+}
+
+/*-- 
+    make the labels (and their textfields) line-up nicely 
+    (this version of this stylesheet predates me learning about
+    CSS grid and flex layouts)
+--*/
+
+label
+{
+    float: left;
+    text-align: right;
+    width: 6em;
+    margin-right: 0.5em;
+}
+
+/*-- put a LITTLE space between the textfields --*/
+
+input
+{
+    margin-bottom: 0.3em;
+}
+
+/*-- and LESS space under the form's submit button --*/
+
+input[type="submit"]
+{
+    margin-bottom: 0;
+}
+
+/*-- use a div to allow centering of the form's submit button --*/
+
+div.submit
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 3.75em;
+}
+
+ol, li
+{
+    border: thin solid black;
+    border-collapse: collapse;
+    padding: 0.25em;
+}
+
+footer
+{
+    font-size: 50%;
+}

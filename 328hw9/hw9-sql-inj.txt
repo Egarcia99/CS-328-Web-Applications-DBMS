@@ -1,0 +1,20 @@
+Emilyo Garcia 
+CS 328 
+Homework 9 Problem 2
+
+
+1) From the article "SQL Injection Attacks by Example" it states that the error response can be a 
+    dead give-away to a user-input not being sanitized properly which ends up making the application 
+    open to exploitation. I chose this because I never realized how a specific error can be a giveaway 
+    to a poorly constructed webpage.
+
+2) From the article "How security flaws work: SQL injection" it talks about how bad both being able to 
+    read and write sensitive data to a database can cause such problems. Especially that since they can create 
+    a username and login with that password they know , they will automatically gain access to the database information.
+    I chose this beacuse it is important to always make sure everything is secured and to make sure sensitive information 
+    never should fall in the wrong hands especially since they can gain so much power over it.
+
+3) From the article "How security flaws work: SQL injection" it brings up the fact that using db_name() SQL Server function 
+   it will returns the name of the current database by simply outputting an error and plaintly outputting the database name
+   something an attacker can easily take advantage of. I chose this because it shows how easily an attacker can gain access 
+   to important information of a database and the creators must be aware of these harmful techniques attackers use.

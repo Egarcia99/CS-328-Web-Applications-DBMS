@@ -1,0 +1,223 @@
+
+Emilyo Garcia
+
+
+===== Problem 6 part a =====
+
+
+Function created.
+
+No errors.
+
+===== Problem 6 part b =====
+
+
+Function created.
+
+No errors.
+
+*********************************
+TESTING insert_order_needed
+*********************************
+
+
+Commit complete.
+
+=============================================================
+test 1: SUCCESSFUL insert into order_needed
+(no existing order_needed for this title)
+=============================================================
+
+
+1 row updated.
+
+
+PL/SQL procedure successfully completed.
+
+
+=============================================================
+test 1 passes if (part 1 of 2):
+
+the insert_order_needed call returns 'success'
+=============================================================
+
+
+RESULT_STR                                                                      
+--------------------------------------------------------------------------------
+success                                                                         
+
+
+=============================================================
+test 1 passes if (part 2 of 2):
+
+there is now an order_needed row
+with ord_needed_id of 1011, for 9780201122305,
+for 50 copies, with date_created of today,
+and ord_num that is empty/null
+=============================================================
+
+
+ORD_NEEDED_ID TTL_ISBN      QTY_DESIRED DATE_NEED    ORD_NUM                    
+------------- ------------- ----------- --------- ----------                    
+         1011 9780201122305          50 07-APR-23                               
+
+=============================================================
+test 2: SUCCESSFUL insert into order_needed
+(existing order_needed rows for this title that are NOT pending)
+=============================================================
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+PL/SQL procedure successfully completed.
+
+=============================================================
+test 2 passes if (part 1 of 2):
+
+the insert_order_needed call returns 'success'
+=============================================================
+
+RESULT_STR                                                                      
+--------------------------------------------------------------------------------
+success                                                                         
+
+=============================================================
+test 2 passes if (part 2 of 2):
+
+there are now FOUR order_needed rows for 9780805343021,
+THREE completed, and the "new" row, with ord_needed_id of 1014,
+for 5 copies, with date_created of today,
+and ord_num that is empty/null
+=============================================================
+
+ORD_NEEDED_ID TTL_ISBN      QTY_DESIRED DATE_NEED    ORD_NUM                    
+------------- ------------- ----------- --------- ----------                    
+         1012 9780805343021          10 01-OCT-22      11015                    
+         1013 9780805343021           5 23-JUN-22      11016                    
+         1014 9780805343021           5 07-APR-23                               
+         1003 9780805343021          10 08-JAN-23      11009                    
+
+=============================================================
+test 3: UNSUCCESSFUL insert into order_needed
+(title already has PENDING order_needed row)
+=============================================================
+
+PL/SQL procedure successfully completed.
+
+=============================================================
+test 3 passes if (part 1 of 2):
+
+the insert_order_needed call returns 'already known needed'
+=============================================================
+
+RESULT_STR                                                                      
+--------------------------------------------------------------------------------
+already known needed                                                            
+
+=============================================================
+test 3 passes if (part 2 of 2):
+
+there is still ONLY FOUR order_needed rows for 9780805343021,
+with last having ord_needed_id of 1014,
+for 5 copies, with date_created of today,
+and ord_num that is empty/null
+=============================================================
+
+ORD_NEEDED_ID TTL_ISBN      QTY_DESIRED DATE_NEED    ORD_NUM                    
+------------- ------------- ----------- --------- ----------                    
+         1012 9780805343021          10 01-OCT-22      11015                    
+         1013 9780805343021           5 23-JUN-22      11016                    
+         1014 9780805343021           5 07-APR-23                               
+         1003 9780805343021          10 08-JAN-23      11009                    
+
+=============================================================
+test 4: UNSUCCESSFUL insert into order_needed
+(no pending order_needed, but title already on order and not yet
+received)
+=============================================================
+
+1 row created.
+
+
+1 row created.
+
+
+1 row updated.
+
+
+PL/SQL procedure successfully completed.
+
+=============================================================
+test 4 passes if (part 1 of 2):
+
+the insert_order_needed call returns 'already on order'
+=============================================================
+
+RESULT_STR                                                                      
+--------------------------------------------------------------------------------
+already in order                                                                
+
+=============================================================
+test 4 passes if (part 2 of 2):
+
+there is only one order_needed row
+with ord_needed_id of 1011, for 9780201122305,
+for 50 copies, with date_created of today,
+and ord_num that is 11017
+=============================================================
+
+ORD_NEEDED_ID TTL_ISBN      QTY_DESIRED DATE_NEED    ORD_NUM                    
+------------- ------------- ----------- --------- ----------                    
+         1011 9780201122305          50 07-APR-23      11017                    
+
+=============================================================
+test 5: UNSUCCESSFUL insert into order_needed
+(for a non-existent title 1111111111111)
+=============================================================
+
+PL/SQL procedure successfully completed.
+
+=============================================================
+test 5 passes if (part 1 of 2):
+
+the insert_order_needed call returns 'insertion failed'
+=============================================================
+
+RESULT_STR                                                                      
+--------------------------------------------------------------------------------
+insertion failed                                                                
+
+=============================================================
+test 5 passes if (part 2 of 2):
+
+there NO order_needed row for title 1111111111111
+=============================================================
+
+no rows selected
+
+undoing temporary testing changes
+
+Rollback complete.
+
