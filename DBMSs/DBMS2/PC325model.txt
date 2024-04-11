@@ -1,0 +1,24 @@
+Written by: Autumn Young & Chad Bellinger
+
+        Modified by Emilyo Garcia
+        CS 328 - spring 2023
+        Feb 18 2023
+
+
+Customer(CUST_ID, cust_name, cust_address)
+
+Cust_phone(CUST_ID, CUST_PHONE)
+    CUST_ID references Customer
+
+Event(EVENT_ID, event_date, event_name, event_loc)
+
+Volunteer(VOL_ID, vol_fname, vol_lname, vol_hrs)
+
+Employee(EMPL_ID, empl_lname, empl_fname, empl_salary)
+
+Pet(PET_ID, pet_name, pet_type, pet_age, pet_food, cust_id)
+    cust_id references Customer
+
+Event_reg(EVENT_ID, CUST_ID)
+    EVENT_ID references Event
+    CUST_ID references Customer

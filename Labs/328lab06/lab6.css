@@ -1,0 +1,74 @@
+/* Victor Diaz and Emilyo Garcia 
+   Lab 06 CSS style sheet
+   modified: 02/24/23       */
+
+.animate {
+    width: 75px;
+    height: 75px;
+    background: aquamarine;
+    animation: sizingAnimation 5s infinite;
+}
+
+@keyframes sizingAnimation {
+    from { width: 75px; }
+    to { width: 400px; }
+}
+#write {
+    width: 75px;
+    height: 75px;
+    background: aquamarine;
+    animation: sizingAnimation1 5s infinite;
+    overflow: hidden;
+}
+
+@keyframes sizingAnimation1 {
+    from { width: 750px; }
+    to { width: 40px; }
+}
+p{
+    color: orangered;
+}
+
+h2{
+    color: rebeccapurple;
+}
+
+h1{
+    color: royalblue;
+}
+
+h3{
+    color: darkmagenta;
+}
+
+fieldset legend {
+    background-color: darkturquoise;
+}
+
+fieldset textarea {
+    width: 100px;
+    height: 100px;
+    background-color: chartreuse;
+    animation: example 5s infinite;
+}
+
+@keyframes example {
+    from {background-color: chartreuse;}
+    to {background-color: hotpink;}
+}
+
+fieldset input, fieldset label {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation: example2 5s infinite;
+
+}
+@keyframes example2 {
+    0% {background-color: orange; left:0px; top:0px;}
+    25% {background-color: yellow; left:100px; top:0px;}
+    50% {background-color: blue; left:100px; top:100px;}
+    75% {background-color: green; left:0px; top:100px;}
+    100% {background-color: black; left:0px; top:0px;}
+}

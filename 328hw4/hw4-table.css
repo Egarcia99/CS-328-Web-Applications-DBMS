@@ -1,0 +1,37 @@
+/* Emilyo Garcia
+   Homework 4 Problem 3
+   last modified date 
+   03/02/2023   */
+
+body {
+    background-color: #FFFF33;
+    color: #0000FF;
+}
+
+
+table {
+
+margin-left: auto;
+
+margin-right: auto;
+
+border-collapse: separate;
+
+}
+caption {
+    font-weight: bold;
+    border: darkblue;
+    border-style: solid;
+}
+
+th {
+    border: orangered;
+    border-style: solid;
+    padding: .1cm;
+}
+td  {
+    border: orangered;
+    border-style: solid;
+    padding: .05cm;
+}
+

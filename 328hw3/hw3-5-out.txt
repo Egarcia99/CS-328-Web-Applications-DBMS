@@ -1,0 +1,29 @@
+
+Emilyo Garcia
+
+
+===== Problem 5 =====
+
+
+===== Problem 5 part a =====
+
+
+  COUNT(*)                                                                      
+----------                                                                      
+         8                                                                      
+
+
+===== Problem 5 part b =====
+
+
+MAX(ORD_NEEDED_ID)                                                              
+------------------                                                              
+              1010                                                              
+
+
+===== Problem 5 part c =====
+
+
+Function created.
+
+No errors.

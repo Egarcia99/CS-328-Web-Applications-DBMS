@@ -1,0 +1,73 @@
+
+=========
+CS 328 - Week 3 Lab Exercise - Problem 1
+Emilyo Garcia
+=========
+
+Function created.
+
+No errors.
+
+Commit complete.
+
+
+1 row created.
+
+==========
+calling show_manager: Ward should have Blake as a manager:
+==========
+
+PL/SQL procedure successfully completed.
+
+
+MANAGER_STRING                                                                  
+--------------------------------------------------------------------------------
+Blake                                                                           
+
+==========
+calling show_manager: Raimi should have King as a manager:
+==========
+
+PL/SQL procedure successfully completed.
+
+
+MANAGER_STRING                                                                  
+--------------------------------------------------------------------------------
+King                                                                            
+
+==========
+calling show_manager: King should have No manager
+==========
+
+PL/SQL procedure successfully completed.
+
+
+MANAGER_STRING                                                                  
+--------------------------------------------------------------------------------
+No manager                                                                      
+
+==========
+calling show_manager: Wilbon should be Not an employee
+==========
+
+PL/SQL procedure successfully completed.
+
+
+MANAGER_STRING                                                                  
+--------------------------------------------------------------------------------
+Not an employee                                                                 
+
+==========
+calling show_manager: Jones has Name not unique
+==========
+
+PL/SQL procedure successfully completed.
+
+
+MANAGER_STRING                                                                  
+--------------------------------------------------------------------------------
+Name Not Unique                                                                 
+
+
+Rollback complete.
+

@@ -1,0 +1,162 @@
+===== Emilyo Garcia ======
+
+===== Problem 1 =====
+
+Procedure created.
+
+No errors.
+===== Testing Problem 1a =====
+HEYY!!                                                                          
+HEYY!!                                                                          
+HEYY!!                                                                          
+HEYY!!                                                                          
+HEYY!!                                                                          
+HEYY!!                                                                          
+HEYY!!                                                                          
+HEYY!!                                                                          
+HEYY!!                                                                          
+
+PL/SQL procedure successfully completed.
+
+===== expecting 9 =====
+===== Testing Problem 1b =====
+YO!!                                                                            
+YO!!                                                                            
+YO!!                                                                            
+YO!!                                                                            
+YO!!                                                                            
+
+PL/SQL procedure successfully completed.
+
+===== expecting 5 =====
+
+
+===== Problem 2 =====
+
+Function created.
+
+No errors.
+===== Testing Problem 2a =====
+
+PL/SQL procedure successfully completed.
+
+
+TOTALBOOK_COST                                                                  
+--------------                                                                  
+        1137.5                                                                  
+
+Test passes if it shows ISBN 9780871507877 has
+
+===== a total cost of 1137.5 =====
+
+===== Testing Problem 2b =====
+
+PL/SQL procedure successfully completed.
+
+
+TOTALBOOK_COST                                                                  
+--------------                                                                  
+          79.5                                                                  
+
+Test passes if it shows ISBN 9780871502445 has
+
+===== a total cost of 79.5 =====
+
+===== Testing Problem 2c =====
+
+PL/SQL procedure successfully completed.
+
+
+TOTALBOOK_COST                                                                  
+--------------                                                                  
+            -1                                                                  
+
+Test passes if it shows ISBN 1313131313131 has
+
+===== returns -1 =====
+
+===== Problem 3 =====
+
+
+Table dropped.
+
+
+Table created.
+
+
+Trigger created.
+
+No errors.
+
+Testing Trigger log_salary_updates
+
+
+Commit complete.
+
+
+EMPL EMPL_LAST_NAME  JOB_TITLE  MGR  HIREDATE      SALARY COMMISSION DEP        
+---- --------------- ---------- ---- --------- ---------- ---------- ---        
+7839 King            President       17-NOV-11       5000            500        
+7566 Jones           Manager    7839 02-APR-12       2975            200        
+7698 Blake           Manager    7839 01-MAY-13       2850            300        
+7782 Raimi           Manager    7839 09-JUN-12       2450            100        
+7902 Ford            Analyst    7566 03-DEC-12       3000            200        
+7369 Smith           Clerk      7902 17-DEC-12        800            200        
+7499 Michaels        Sales      7698 20-FEB-18       1600        300 300        
+7521 Ward            Sales      7698 22-FEB-19       1250        500 300        
+7654 Martin          Sales      7698 28-SEP-18       1250       1400 300        
+7788 Scott           Analyst    7566 09-NOV-18       3000            200        
+7844 Turner          Sales      7698 08-SEP-19       1500          0 300        
+
+EMPL EMPL_LAST_NAME  JOB_TITLE  MGR  HIREDATE      SALARY COMMISSION DEP        
+---- --------------- ---------- ---- --------- ---------- ---------- ---        
+7876 Adams           Clerk      7788 23-SEP-18       1100            400        
+7900 James           Clerk      7698 03-DEC-17        950            300        
+7934 Miller          Clerk      7782 23-JAN-16       1300            100        
+
+14 rows selected.
+
+
+no rows selected
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+EMPL EMPL_LAST_NAME  JOB_TITLE  MGR  HIREDATE      SALARY COMMISSION DEP        
+---- --------------- ---------- ---- --------- ---------- ---------- ---        
+7839 King            Clerk           17-NOV-11       7500            500        
+7566 Jones           Manager    7839 02-APR-12       5975            200        
+7698 Blake           Manager    7839 01-MAY-13       2850            300        
+7782 Raimi           Manager    7839 09-JUN-12       2450            100        
+7902 Ford            Analyst    7566 03-DEC-12       3000            200        
+7369 Smith           Clerk      7902 17-DEC-12        800            200        
+7499 Michaels        Sales      7698 20-FEB-18       1600        300 300        
+7521 Ward            Sales      7698 22-FEB-19       1250        500 300        
+7654 Martin          Sales      7698 28-SEP-18       1250       1400 300        
+7788 Scott           Analyst    7566 09-NOV-18       3000            200        
+7844 Turner          Sales      7698 08-SEP-19       1500          0 300        
+
+EMPL EMPL_LAST_NAME  JOB_TITLE  MGR  HIREDATE      SALARY COMMISSION DEP        
+---- --------------- ---------- ---- --------- ---------- ---------- ---        
+7876 Adams           Clerk      7788 23-SEP-18       1100            400        
+7900 James           Clerk      7698 03-DEC-17        950            300        
+7934 Miller          Clerk      7782 23-JAN-16       1300            100        
+
+14 rows selected.
+
+
+EMPL PREV_SALARY NEXT_SALARY CHANGE_DA                                          
+---- ----------- ----------- ---------                                          
+7839        5000        7500 08-FEB-23                                          
+7566        2975        5975 08-FEB-23                                          
+
+
+Rollback complete.
+

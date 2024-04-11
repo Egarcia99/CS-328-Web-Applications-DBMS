@@ -1,0 +1,72 @@
+
+Emilyo Garcia
+
+
+===== Problem 2-a =====
+
+
+PUB_NAME                       LOCATION                                         
+------------------------------ -------------------                              
+Addison-Wesley                 Reading, MA                                      
+Irwin                          Homewood, IL                                     
+Benjamin/Cummings              Menlo Park, CA                                   
+MacMillan                      Riverside, NJ                                    
+PWS                            Boston, MA                                       
+Prentice Hall                  Eaglewood Clfs, NJ                               
+Merrill                        Columbus, OH                                     
+McGraw-Hill                    New York, NY                                     
+Science Research Associates    Menlo Park, CA                                   
+The MIT Press                  Cambridge, MA                                    
+
+10 rows selected.
+
+
+===== Problem 2-b =====
+
+
+   Price TTL_NAME                                                               
+-------- ---------------------------------------------                          
+  $49.50 Computer Science, An Overview                                          
+  $34.95 Computers and Data Processing                                          
+  $14.95 Case Book for Data Base Management                                     
+  $37.95 Data Base Management                                                   
+  $29.95 BASIC: A Structured Approach                                           
+
+
+   ORD_NUM ORD_LINE_NUM TTL_ISBN      ORD_LINE_QTY                              
+---------- ------------ ------------- ------------                              
+     11009            1 9780805343021           10                              
+     11009            2 9780133760064           10                              
+     11010            1 9780201144710           12                              
+     11010            2 9780201078282           15                              
+     11011            1 9780256033205           15                              
+     11012            1 9780131892422            3                              
+     11012            2 9780131103627          100                              
+     11013            1 9780130094285           15                              
+     11014            1 9780073401324          100                              
+
+9 rows selected.
+
+
+===== Problem 2-e =====
+
+
+TTL_AUTH_LNAME                 ORD_LINE_QTY                                     
+------------------------------ ------------                                     
+Kernighan                               100                                     
+Law                                     100                                     
+Stamper                                  15                                     
+Pyle                                     15                                     
+Koffman                                  15                                     
+Date                                     12                                     
+Kittner                                  10                                     
+Brookshear                               10                                     
+King                                      3                                     
+
+9 rows selected.
+
+
+MAX(ORD_LINE_QTY)                                                               
+-----------------                                                               
+              100                                                               
+

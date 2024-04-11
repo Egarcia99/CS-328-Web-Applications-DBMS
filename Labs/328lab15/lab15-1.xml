@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- run this page here: http://nrs-projects.humboldt.edu/~eg347/328lab15/lab15-1.xml -->
+<rap>
+    <names> Emilyo Garcia and Victor Diaz </names>
+    <artist> Snoop </artist>
+    <song> 4/20 </song>
+    <genre> Hip/Hop </genre>
+    <location> 
+        <city> compton </city>
+        <state> california </state>
+    </location>
+    <dedications> Loved Ones <haters> east coast </haters> </dedications>
+    <purpose> </purpose>
+    <goal id="story"> YOLO </goal>
+</rap>
+
+    
+       

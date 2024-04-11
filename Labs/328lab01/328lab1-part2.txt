@@ -1,0 +1,6 @@
+SQL> exec hello_world
+Whats Popping! on 20-JAN-23                                                     
+
+PL/SQL procedure successfully completed.
+
+SQL> spool off

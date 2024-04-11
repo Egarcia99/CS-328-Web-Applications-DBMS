@@ -1,0 +1,41 @@
+/* Emilyo Garcia
+   Homework 4 Problem 9
+   last modified date 
+   03/02/2023   */
+
+
+   body {
+    background-color: chartreuse;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+img {
+    margin-right: 0%;
+    margin-left: 75%; 
+    width: 8em;
+    height: 8em;
+}
+
+fieldset {
+    padding: .25cm;
+    column-gap: .2cm;
+    border: solid 2.5px darkcyan;
+    border-radius: 15px;
+    background-color: lightcoral;
+    margin-top: .85cm;
+    margin-bottom: .45cm;
+
+}
+
+header, h3 {
+    color: darkorchid;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 2.5em;
+    font-family: cursive;
+    padding-top: .2em;
+}

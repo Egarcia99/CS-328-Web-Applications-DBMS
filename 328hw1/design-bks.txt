@@ -1,0 +1,37 @@
+Emilyo Garcia
+01/25/2023
+CS 328 
+
+
+publisher (PUB_ID, pub_name, pub_city, pub_state, pub_min_for_disc, pub_disc_pct)
+
+title (TTL_ISBN, ttl_name, ttl_auth_lname, ttl_cost, ttl_price, ttl_qty, ttl_order_point, ttl_auto_order_qty, pub_id)
+
+	foreign key (pub_id) references publisher
+
+order_stock (ORD_NUM, pub _id, ord_date_placed, ord_date_completed)
+
+	foreign key (pub_id) references publisher
+
+order_line_item (ORD_NUM, ORD_LINE_NUM, ttl_isbn, ord_line_qty)
+
+	foreign key (ord_num) references order_stock
+	foreign key (ttl_isbn) references title
+
+order_receipt (ORD_RECEIPT_ID, ord_num, ord_line_num, qty_rcvd, ord_rec_date)
+
+	foreign key (ord_num, ord_line_num) references order_line_item
+
+order_needed (ORD_NEEDED_ID, ttl_isbn, qty_desired, date_need_noted, ord_num)
+
+	foreign key (ord_num) references order_stock
+	foreign key (ttl_isbn) references title
+
+sale (SALE_NUM, sale_date)
+
+sale_line_item (SALE_NUM, SALE_LINE_NUM, sale_line_qty, ttl_isbn)
+	
+	foreign key (sale_num) references sale
+	foreign key (ttl_isbn) references title 
+
+

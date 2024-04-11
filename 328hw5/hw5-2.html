@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<!--
+    For Homework 5 - Problem 2
+
+    adapted by: Emilyo Garcia
+    by: Sharon Tuttle
+    last modified: 2023-03-15
+
+    you can run this using the URL: http://nrs-projects.humboldt.edu/~eg347/hw5.html/hw5-2.html
+
+    TO DO: Put the URL for YOUR copy!
+
+-->
+
+<head>
+    <title> info about YOU! </title>
+    <meta charset="utf-8" />
+
+    <link href="http://nrs-projects.humboldt.edu/~st10/styles/normalize.css"
+          type="text/css" rel="stylesheet" />
+
+    <link href="hw5-2.css" type="text/css" rel="stylesheet" />
+
+
+</head>
+
+<body>
+    <h1> Getting to know you... </h1>
+
+    <form action="http://nrs-projects.humboldt.edu/~st10"
+          method="get">
+
+        <div id="overall_form">
+            <fieldset id="basic_field">
+            <legend> Basic information </legend>
+
+            <div id="basic_sect">
+                <label for="lastname_fld"> Last Name: </label>
+                <input type="text" name="lastname" id="lastname_fld"
+                       size="18" maxlength="18" required="required" />
+
+                <label for="age_fld"> Age: </label>
+                <input type="number" name="age" id="age_fld"
+                       min="0" max="150" /> <br />
+
+                <label for="state_entry"> What state is your
+                     legal residence? </label>
+                <select name="state" id="state_entry">
+                    <option value="OR"> Oregon </option>
+                    <option value="WA"> Washington </option>
+                    <option value="CA"
+                            selected="selected"> California
+                            </option>
+                </select>
+
+                <label for="secret_fld"> Secret
+                    phrase: </label>
+                <input type="password" name="secret_phrase"
+                       id="secret_fld" size="15" />
+
+                <label for="intro_area"> Tell me
+                    about yourself: </label>
+                <textarea name="intro" id="intro_area" rows="5"
+                          cols="33"></textarea>
+            </div>
+            </fieldset>
+
+            <fieldset id="flavor_field">
+            <legend> Which ice cream flavor? </legend>
+
+            <div id="flavor_sect">
+                <input type="radio" name="ice_cream_flavor"
+                       value="chocolate" id="choc" />
+                <label for="choc"> Chocolate </label> 
+
+                <input type="radio" name="ice_cream_flavor"
+                       value="vanilla" id="van"
+                       checked="checked" />
+                <label for="van"> Vanilla </label>
+
+                <input type="radio" name="ice_cream_flavor"
+                       value="dark_chocolate" id="d_choc" />
+                <label for="d_choc"> Dark Chocolate </label>
+            </div> 
+            </fieldset>
+
+            <fieldset id="transport_field">
+            <legend> Which of these do you have? </legend>
+
+            <div id="transport_sect">
+                <input type="checkbox" name="bike" id="bike" />
+                <label for="bike"> Bicycle </label>
+
+                <input type="checkbox" name="car" id="car" />
+                <label for="car"> Car </label>
+
+                <input type="checkbox" name="skateboard" id="skt" />
+                <label for="skt"> Skateboard </label>
+
+                <input type="checkbox" name="horse" id="horse"
+                       checked="checked" />
+                <label for="horse"> Horse </label>
+            </div>
+            </fieldset>
+
+            <div id="submit">
+                <input type="submit" value="submit info" />
+            </div>
+        </div>
+    </form>
+
+    <footer>
+    <hr />
+    <p>
+        Validate by pasting .xhtml copy's URL into<br />
+        <a href="https://html5.validator.nu/">
+            https://html5.validator.nu/
+        </a>
+    </p>
+    </footer>
+</body>
+</html>

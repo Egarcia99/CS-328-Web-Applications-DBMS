@@ -1,0 +1,88 @@
+/*
+   styles for three-value-form.php
+
+   by: Sharon Tuttle
+   last modified: 2023-04-20
+*/
+
+/*-- give a bit of a left, right margin to body --*/
+
+body
+{
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+/*--
+    center the fieldset (and so the form), and also try to reduce
+    its bottom padding
+--*/
+
+fieldset
+{
+    background-color: #ffffcc;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 0.3em;
+    width: 30em;
+}
+
+/*--
+   we'd like a litle spacing at the bottom
+   of our input elements (OUTSIDE their borders,
+   between them and other elements)
+--*/
+
+input
+{
+    margin-bottom: 0.5em;
+}
+
+/*--
+   I think there's TOO much space under each submit
+   button, though (remember: the fieldset may have
+   some padding-bottom...) -- and I think it needs
+   a little more top-margin...?
+--*/
+
+input[type="submit"]
+{
+    margin-top: 0.3em;
+    margin-bottom: 0;
+}
+
+/*-- to help line up form-control labels --*/
+
+label
+{
+    float: left;
+    text-align: right;
+    width: 12em;
+    margin-right: 1em;
+}
+
+/*--
+    to center submit buttons with help of a div
+    (since div is a block element, but input is not)
+--*/
+
+.sub_button
+{
+    display: flex;
+    justify-content: center;
+}
+
+/*-- to right-justify numbers --*/
+
+.right
+{
+    text-align: right;
+}
+
+/*-- want to make any "error" text stand out visually --*/
+
+#errors
+{
+    color: red;
+    font-size: 120%;
+}

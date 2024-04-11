@@ -1,0 +1,12 @@
+Emilyo Garcia
+
+CS 328 Homework Problem 2
+
+Last Modified Date: 03/01/2023
+
+
+foreground color: #0000FF
+background color: #FFFF33
+brightness difference: 202.67
+color difference: 714
+contrast ratio: 8.021

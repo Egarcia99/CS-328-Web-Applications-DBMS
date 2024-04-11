@@ -1,0 +1,13 @@
+CS 328
+
+Emilyo Garcia
+
+Homework 1 Problem 2
+
+01/25/23
+
+I have decided to use a database that will be provided to the class rather than using 
+the database that me and my partner Jake Freed made last semester.
+
+Furthermore me and my partner agreed to not put our copies of our database model to share
+with the class. We will like to keep our work to ourselves for now.

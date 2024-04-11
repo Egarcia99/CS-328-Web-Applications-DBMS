@@ -1,0 +1,13 @@
+===== Emilyo Garcia =====
+
+DEP DEPT_NAME       DEPT_LOC                                                    
+--- --------------- ---------------                                             
+100 Accounting      New York                                                    
+200 Research        Dallas                                                      
+300 Sales           Chicago                                                     
+400 Operations      Boston                                                      
+500 Management      New York                                                    
+455 Donuts          Delware                                                     
+
+6 rows selected.
+

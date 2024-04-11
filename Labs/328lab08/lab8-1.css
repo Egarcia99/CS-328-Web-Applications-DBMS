@@ -1,0 +1,18 @@
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+body{
+    margin: 0 0.5em;
+    
+}
+
+
+.wrapper div {
+    font-size: 2em;
+    border: 0.05em solid black;
+    padding: .1em;
+    background-color: yellow;
+
+}

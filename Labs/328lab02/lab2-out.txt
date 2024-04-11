@@ -1,0 +1,123 @@
+Emilyo Garcia and Victor Diaz
+
+===== Problem 1 =====
+
+
+Procedure created.
+
+No errors.
+
+===== Testing total_salary ======
+
+Total salary for Sales is 5600                                                  
+
+PL/SQL procedure successfully completed.
+
+
+===== Problem 2 =====
+
+
+Function created.
+
+No errors.
+
+===== Testing Lower_s =====
+
+
+PL/SQL procedure successfully completed.
+
+
+===== expecting 1 =====
+
+
+  MY_QUANT                                                                      
+----------                                                                      
+         1                                                                      
+
+
+===== Testing Lower_s 2 =====
+
+
+PL/SQL procedure successfully completed.
+
+
+===== expecting 9 =====
+
+
+  MY_QUANT                                                                      
+----------                                                                      
+         9                                                                      
+
+
+===== Problem 3 =====
+
+
+Table dropped.
+
+
+Table created.
+
+
+Trigger created.
+
+No errors.
+===== testing trigger log_dept_updates =====
+
+===== hoping to see 1 =====
+
+Commit complete.
+
+
+5 rows updated.
+
+
+DEP DEPT_NAME       DEPT_LOC                                                    
+--- --------------- ---------------                                             
+100 depts           New York                                                    
+200 depts           Dallas                                                      
+300 depts           Chicago                                                     
+400 depts           Boston                                                      
+500 depts           New York                                                    
+
+
+CHANGE_DA PREV_DEPT_NAME  NEXT_DEPT_NAME                                        
+--------- --------------- ---------------                                       
+07-FEB-23 Accounting      depts                                                 
+07-FEB-23 Management      depts                                                 
+07-FEB-23 Operations      depts                                                 
+07-FEB-23 Research        depts                                                 
+07-FEB-23 Sales           depts                                                 
+
+
+Rollback complete.
+
+===== testing trigger log_dept_updates2 =====
+
+===== hoping to see depts as new title =====
+
+Commit complete.
+
+
+5 rows updated.
+
+
+DEP DEPT_NAME       DEPT_LOC                                                    
+--- --------------- ---------------                                             
+100 depts2          New York                                                    
+200 depts2          Dallas                                                      
+300 depts2          Chicago                                                     
+400 depts2          Boston                                                      
+500 depts2          New York                                                    
+
+
+CHANGE_DA PREV_DEPT_NAME  NEXT_DEPT_NAME                                        
+--------- --------------- ---------------                                       
+07-FEB-23 Accounting      depts2                                                
+07-FEB-23 Management      depts2                                                
+07-FEB-23 Operations      depts2                                                
+07-FEB-23 Research        depts2                                                
+07-FEB-23 Sales           depts2                                                
+
+
+Rollback complete.
+

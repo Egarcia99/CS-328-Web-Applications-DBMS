@@ -1,0 +1,103 @@
+ /* Emilyo Garcia
+   Homework 4 Problem 8
+   last modified date 
+   03/24/2023   */
+
+
+body {
+    background-color: darkgoldenrod;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+img {
+    margin-right: 0%;
+    margin-left: 75%;
+    width: 8em;
+    height: 8em;
+    animation-name: img;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+}
+
+@keyframes img {
+    0% {
+        margin-top: 0%;
+        margin-left: 75%;
+    }
+    50% {
+        margin-top: 10%;
+        margin-left: -100%;
+    }
+    100% {
+        margin-top: 0%;
+        margin-left: 75%;
+    }
+}
+
+form {
+    animation-name: form;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+}
+
+@keyframes form {
+    0% {
+        margin-top: 0%;
+    }
+    50% {
+        margin-top: -10%;
+    }
+    100% {
+        margin-top: 0%;
+    }
+}
+
+fieldset {
+    padding: .25cm;
+    column-gap: .2cm;
+    border: solid 2.5px darkcyan;
+    border-radius: 15px;
+    background-color: aquamarine;
+    margin-top: .85cm;
+    margin-bottom: .45cm;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-auto-rows: minmax(1em, auto);
+    gap: .05em
+
+}
+
+header, h3 {
+    color: aqua;
+}
+
+h3 {
+    font-size: 2.5em;
+}
+
+label [for="username"] {
+    grid-row: 1;
+    grid-column: 1 / 1;
+}
+
+#username {
+    grid-row: 1;
+    grid-column: 2 / 2;
+}
+
+label [for="password"] {
+    grid-row: 2;
+    grid-column: 3 / 3;
+}
+
+#password {
+    grid-row: 2;
+    grid-column: 2 / 3;
+}
+
+#submit {
+    grid-row: 3;
+    grid-column: 2 / 3;
+}

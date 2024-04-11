@@ -1,0 +1,10 @@
+Written by: Autumn Young & Chad Bellinger
+
+        Modified by Emilyo Garcia
+        CS 328 - spring 2023
+        Feb 18 2023
+
+        3 business rules:
+1. Each customer can have a maximum of 3 pets.
+2. No reptiles.
+3. Each class can have a maximum of 10 customers.

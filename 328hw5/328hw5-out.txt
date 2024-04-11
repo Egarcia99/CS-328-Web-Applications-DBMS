@@ -1,0 +1,112 @@
+
+Emilyo Garcia
+
+
+===== Problem 4 part a =====
+
+
+Function created.
+
+No errors.
+
+************************
+TESTING bool_to_string
+************************
+
+===================
+test passes if bool_to_string(true) returns TRUE
+(which IS how the varchar2 value 'TRUE' is displayed here):
+===================
+
+PL/SQL procedure successfully completed.
+
+
+RESULT_STRING                                                                   
+--------------------------------                                                
+TRUE                                                                            
+
+===================
+test passes if bool_to_string(false) returns FALSE
+(which IS how the varchar2 value 'FALSE' is displayed here):
+===================
+
+PL/SQL procedure successfully completed.
+
+
+RESULT_STRING                                                                   
+--------------------------------                                                
+FALSE                                                                           
+
+
+===== Problem 4 part b =====
+
+insert into order_stock values (999959, 147, '22-DEC-23', NULL)
+*
+ERROR at line 1:
+ORA-00001: unique constraint (EG347.ORDER_STOCK_PK) violated 
+
+
+insert into order_line_item values(999959, 2, 9780133760064, 50)
+*
+ERROR at line 1:
+ORA-00001: unique constraint (EG347.ORDER_LINE_ITEM_PK) violated 
+
+
+insert into order_line_item values(999959, 1, 9780805343021, 113)
+*
+ERROR at line 1:
+ORA-00001: unique constraint (EG347.ORDER_LINE_ITEM_PK) violated 
+
+
+
+You should now see two titles on order in titles_on_order
+
+
+TTL_ISBN      PENDING_ORD_NUM QTY_AWAITING                                      
+------------- --------------- ------------                                      
+9780133760064          999959           50                                      
+9780805343021          999959          113                                      
+
+
+===== Problem 5 part c =====
+
+
+Function created.
+
+No errors.
+
+===== Testing bool_to_string(is_on_order for ISBN('9780131889187')) should return True
+
+
+PL/SQL procedure successfully completed.
+
+
+ON_ORDER_STATUS                                                                 
+--------------------------------                                                
+FALSE                                                                           
+
+
+===== Testing bool_to_string(is_on_order for ISBN('9780070464555')) should return false
+
+
+PL/SQL procedure successfully completed.
+
+
+ON_ORDER_STATUS                                                                 
+--------------------------------                                                
+FALSE                                                                           
+
+
+===== Testing bool_to_string(is_on_order for ISBN('9780201144710')) should return false
+
+
+PL/SQL procedure successfully completed.
+
+
+ON_ORDER_STATUS                                                                 
+--------------------------------                                                
+FALSE                                                                           
+
+
+Rollback complete.
+

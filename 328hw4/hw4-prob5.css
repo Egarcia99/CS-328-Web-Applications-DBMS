@@ -1,0 +1,42 @@
+/* Emilyo Garcia
+   Homework 4 Problem 5
+   last modified date 
+   03/02/2023   */
+
+header {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+body {
+    background-color: #FFFF33;
+    color: #0000FF;
+    text-align: center;
+}
+
+
+fieldset {
+    padding: .25cm;
+    column-gap: .2cm;
+    border: solid 2.5px darkcyan;
+    border-radius: 15px;
+}
+
+legend {
+    border: dashed 2.5px darkblue;
+    border-radius: 15px;
+    padding: .35cm;
+    font-weight: bold;
+    font-size: 1.2em;
+    
+}
+
+textarea {
+    background-color: aquamarine;
+    margin-top: .85cm;
+    margin-bottom: .45cm;
+
+}
+
